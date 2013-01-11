@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'EGOTableViewPullRefreshLibrary' target in the 'EGOTableViewPullRefreshLibrary' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

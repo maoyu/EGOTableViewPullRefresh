@@ -1,0 +1,240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C91EABA169FACA80017E3FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C91EAB9169FACA80017E3FC /* Foundation.framework */; };
+		3C91EABF169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C91EABE169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.h */; };
+		3C91EAC1169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C91EAC0169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3C91EAB4169FACA80017E3FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				3C91EABF169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C91EAB6169FACA80017E3FC /* libEGOTableViewPullRefreshLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEGOTableViewPullRefreshLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C91EAB9169FACA80017E3FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3C91EABD169FACA80017E3FC /* EGOTableViewPullRefreshLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EGOTableViewPullRefreshLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		3C91EABE169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGOTableViewPullRefreshLibrary.h; sourceTree = "<group>"; };
+		3C91EAC0169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGOTableViewPullRefreshLibrary.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C91EAB3169FACA80017E3FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C91EABA169FACA80017E3FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C91EAAB169FACA80017E3FC = {
+			isa = PBXGroup;
+			children = (
+				3C91EABB169FACA80017E3FC /* EGOTableViewPullRefreshLibrary */,
+				3C91EAB8169FACA80017E3FC /* Frameworks */,
+				3C91EAB7169FACA80017E3FC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C91EAB7169FACA80017E3FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C91EAB6169FACA80017E3FC /* libEGOTableViewPullRefreshLibrary.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C91EAB8169FACA80017E3FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C91EAB9169FACA80017E3FC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C91EABB169FACA80017E3FC /* EGOTableViewPullRefreshLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				3C91EABE169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.h */,
+				3C91EAC0169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.m */,
+				3C91EABC169FACA80017E3FC /* Supporting Files */,
+			);
+			path = EGOTableViewPullRefreshLibrary;
+			sourceTree = "<group>";
+		};
+		3C91EABC169FACA80017E3FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C91EABD169FACA80017E3FC /* EGOTableViewPullRefreshLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C91EAB5169FACA80017E3FC /* EGOTableViewPullRefreshLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C91EAC4169FACA80017E3FC /* Build configuration list for PBXNativeTarget "EGOTableViewPullRefreshLibrary" */;
+			buildPhases = (
+				3C91EAB2169FACA80017E3FC /* Sources */,
+				3C91EAB3169FACA80017E3FC /* Frameworks */,
+				3C91EAB4169FACA80017E3FC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EGOTableViewPullRefreshLibrary;
+			productName = EGOTableViewPullRefreshLibrary;
+			productReference = 3C91EAB6169FACA80017E3FC /* libEGOTableViewPullRefreshLibrary.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C91EAAD169FACA80017E3FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Liu&Mao";
+			};
+			buildConfigurationList = 3C91EAB0169FACA80017E3FC /* Build configuration list for PBXProject "EGOTableViewPullRefreshLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3C91EAAB169FACA80017E3FC;
+			productRefGroup = 3C91EAB7169FACA80017E3FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C91EAB5169FACA80017E3FC /* EGOTableViewPullRefreshLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C91EAB2169FACA80017E3FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C91EAC1169FACA80017E3FC /* EGOTableViewPullRefreshLibrary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3C91EAC2169FACA80017E3FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C91EAC3169FACA80017E3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C91EAC5169FACA80017E3FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/EGOTableViewPullRefreshLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EGOTableViewPullRefreshLibrary/EGOTableViewPullRefreshLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3C91EAC6169FACA80017E3FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/EGOTableViewPullRefreshLibrary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EGOTableViewPullRefreshLibrary/EGOTableViewPullRefreshLibrary-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C91EAB0169FACA80017E3FC /* Build configuration list for PBXProject "EGOTableViewPullRefreshLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C91EAC2169FACA80017E3FC /* Debug */,
+				3C91EAC3169FACA80017E3FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C91EAC4169FACA80017E3FC /* Build configuration list for PBXNativeTarget "EGOTableViewPullRefreshLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C91EAC5169FACA80017E3FC /* Debug */,
+				3C91EAC6169FACA80017E3FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3C91EAAD169FACA80017E3FC /* Project object */;
+}
