@@ -30,6 +30,7 @@
 #define TEXT_COLOR	 [UIColor colorWithRed:87.0/255.0 green:108.0/255.0 blue:137.0/255.0 alpha:1.0]
 #define FLIP_ANIMATION_DURATION 0.18f
 
+#define PULL_HEIGHT 68.0f
 
 @interface EGORefreshTableHeaderView (Private)
 - (void)setState:(EGOPullRefreshState)aState;
@@ -71,7 +72,7 @@
 		[label release];
 		
 		CALayer *layer = [CALayer layer];
-		layer.frame = CGRectMake(50.0f, frame.size.height - 30.0f, 10.0f, 25.0f);
+		layer.frame = CGRectMake(15.0f, frame.size.height - 60.0f, 23.0f, 60.0f);
 		layer.contentsGravity = kCAGravityResizeAspect;
 		layer.contents = (id)[UIImage imageNamed:arrow].CGImage;
 		
@@ -133,7 +134,7 @@
 	
 	switch (aState) {
 		case EGOOPullRefreshPulling:
-			_statusLabel.text = NSLocalizedString(@"松开创建文字提醒", @"Release to refresh status");
+			_statusLabel.text = NSLocalizedString(@"松开即可创建文字提醒", @"Release to refresh status");
 			[CATransaction begin];
 			[CATransaction setAnimationDuration:FLIP_ANIMATION_DURATION];
 			_arrowImage.transform = CATransform3DMakeRotation((M_PI / 180.0) * 180.0f, 0.0f, 0.0f, 1.0f);
@@ -148,7 +149,7 @@
 				[CATransaction commit];
 			}
 			
-			_statusLabel.text = NSLocalizedString(@"下拉创建文字提醒", @"Pull down to refresh status");
+			_statusLabel.text = NSLocalizedString(@"下拉可以创建文字提醒", @"Pull down to refresh status");
 			[_activityView stopAnimating];
 			[CATransaction begin];
 			[CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions]; 
@@ -195,9 +196,9 @@
 			_loading = [_delegate egoRefreshTableHeaderDataSourceIsLoading:self];
 		}
 		
-		if (_state == EGOOPullRefreshPulling && scrollView.contentOffset.y > -30.0f && scrollView.contentOffset.y < 0.0f && !_loading) {
+		if (_state == EGOOPullRefreshPulling && scrollView.contentOffset.y > -PULL_HEIGHT && scrollView.contentOffset.y < 0.0f && !_loading) {
 			[self setState:EGOOPullRefreshNormal];
-		} else if (_state == EGOOPullRefreshNormal && scrollView.contentOffset.y < -30.0f && !_loading) {
+		} else if (_state == EGOOPullRefreshNormal && scrollView.contentOffset.y < -PULL_HEIGHT && !_loading) {
 			[self setState:EGOOPullRefreshPulling];
 		}
 		
@@ -216,7 +217,7 @@
 		_loading = [_delegate egoRefreshTableHeaderDataSourceIsLoading:self];
 	}
 	
-	if (scrollView.contentOffset.y <= - 30.0f && !_loading) {
+	if (scrollView.contentOffset.y <= - PULL_HEIGHT && !_loading) {
 		
 		if ([_delegate respondsToSelector:@selector(egoRefreshTableHeaderDidTriggerRefresh:)]) {
 			[_delegate egoRefreshTableHeaderDidTriggerRefresh:self];
